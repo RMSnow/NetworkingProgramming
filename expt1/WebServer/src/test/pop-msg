@@ -1,0 +1,10 @@
+Frame 55: 153 bytes on wire (1224 bits), 153 bytes captured (1224 bits) on interface 0
+Ethernet II, Src: Tp-LinkT_dc:ca:4b (b8:f8:83:dc:ca:4b), Dst: AsixElec_cf:6c:d2 (00:0e:c6:cf:6c:d2)
+Internet Protocol Version 4, Src: 123.125.50.23, Dst: 192.168.1.102
+Transmission Control Protocol, Src Port: 110, Dst Port: 56580, Seq: 1, Ack: 1, Len: 87
+Post Office Protocol
+    +OK Welcome to coremail Mail Pop3 Server (126coms[753e2252bd59b8c4a1c2eb6d5fe57cb3s])\r\n
+        Response indicator: +OK
+        Response description: Welcome to coremail Mail Pop3 Server (126coms[753e2252bd59b8c4a1c2eb6d5fe57cb3s])
+
+

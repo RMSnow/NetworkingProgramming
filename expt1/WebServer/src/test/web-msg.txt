@@ -1,0 +1,41 @@
+[Postman-POST]
+
+POST / HTTP/1.1
+cache-control: no-cache
+Postman-Token: de372c77-974d-4712-ab37-dcb88ce1de70
+User-Agent: PostmanRuntime/6.4.1
+Accept: */*
+Host: localhost:8080
+accept-encoding: gzip, deflate
+content-type: multipart/form-data; boundary=--------------------------869815759519057510504163
+content-length: 279
+Connection: keep-alive
+
+----------------------------869815759519057510504163
+Content-Disposition: form-data; name="username"
+
+zxy
+----------------------------869815759519057510504163
+Content-Disposition: form-data; name="passward"
+
+123456
+----------------------------869815759519057510504163--
+
+Process finished with exit code 130 (interrupted by signal 2: SIGINT)
+
+
+[Form-POST]
+POST /form_action.html HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 17
+Cache-Control: max-age=0
+Origin: http://localhost:8080
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:8080/Hello.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Cookie: _ga=GA1.1.1953199574.1512624635; Idea-2675c956=3fac7fb2-c437-4f21-a5ee-c5ceed900505; username-localhost-8889="2|1:0|10:1523066418|23:username-localhost-8889|44:Yjg3YzczNzc0YTIxNDNmMmJiZGNjZDc1OGZjY2E4YzE=|eda2dbb4744904c9cba11332e2b152777ed520b5b7648d3f167f19d58031a847"; _xsrf=2|a57962b5|e0bef12590ae876a9736468f8b6aab29|1523788140; username-localhost-8888="2|1:0|10:1524034441|23:username-localhost-8888|44:ZTdhMGFjZTFjNzczNGQ5YThkNTA4NTBlZGM1YjI1M2U=|9bf23a27cfaad1a898fcd3aacea253c3199eb96d2d8b585819ee03f6300145d7"
