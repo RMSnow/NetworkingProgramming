@@ -1,0 +1,11 @@
+exception BulbBrokenException
+{
+
+};
+
+interface LightBulb
+{
+    void on() raises (BulbBrokenException);
+    void off();
+    boolean isOn() raises (BulbBrokenException);
+};
