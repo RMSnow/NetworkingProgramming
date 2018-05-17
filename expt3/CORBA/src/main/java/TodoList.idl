@@ -1,5 +1,5 @@
-module Users{
-    interface TodoList{
+module TodoList{
+    interface UserOperation{
         boolean add(in string startTime, in string endTime, in string description);
         string query(in string startTime, in string endTime);
         boolean delete(in string key);

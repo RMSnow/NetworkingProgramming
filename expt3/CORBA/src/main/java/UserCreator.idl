@@ -1,4 +1,4 @@
-module TodoListCreator{
+module UserCreator{
     interface Creator{
         boolean login(in string username, in string password);
         boolean register(in string username, in string password);
