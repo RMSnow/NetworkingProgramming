@@ -1,6 +1,6 @@
 import UserCreator.Creator;
 import UserCreator.CreatorHelper;
-import UserCreator.CreatorImpl;
+import UserCreator.CreatorServantImpl;
 import org.omg.CORBA.ORB;
 import org.omg.CosNaming.NameComponent;
 import org.omg.CosNaming.NamingContextExt;
@@ -13,7 +13,9 @@ import java.util.Properties;
 /**
  * Created by snow on 2018/5/8.
  */
-public class Server {
+public class Servant {
+    public static final String NAME_SERVICE_CREATOR = "Creator";
+
     public static void main(String[] args){
         try {
             //String[] args = {};
@@ -31,7 +33,7 @@ public class Server {
             rootPOA.the_POAManager().activate();
 
             //TODO: 创建一个CreatorImpl实例
-            CreatorImpl creatorImpl = new CreatorImpl();
+            CreatorServantImpl creatorImpl = new CreatorServantImpl();
 //            creatorImpl.setToDoListServer(this);
 
             //从服务中得到对象的引用,并注册到服务中
@@ -43,8 +45,8 @@ public class Server {
             NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
 
             //在命名上下文中绑定这个对象
-            String name = "Creator";
-            NameComponent path[] = ncRef.to_name(name);
+//            String name = "Creator";
+            NameComponent path[] = ncRef.to_name(NAME_SERVICE_CREATOR);
             ncRef.rebind(path, creatorhref);
 
             System.out.println("server.ToDoListServer is ready and waiting....");
@@ -56,3 +58,5 @@ public class Server {
         }
     }
 }
+
+//orbd -ORBInitialPort 8080 -ORBInitialHost 127.0.0.1
