@@ -5,6 +5,6 @@ import app.AppServant;
  */
 public class Test {
     public static void main(String[] args){
-        AppServant.createNameServceOfUser("app");
+        AppServant.createNameServceOfUser("corba/app");
     }
 }
